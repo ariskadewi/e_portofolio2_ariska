@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Portfolio Refleksi Akhir PPL Terbimbing - Program Pendidikan Profesi Guru">
+    <meta name="author" content="Ariska Dewi">
+    <title>E-Portfolio | Ariska Dewi - Refleksi PPL Terbimbing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-lilac-50 text-gray-900 font-inter">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="font-playfair font-bold text-2xl text-plum-700 hover:text-plum-600 transition-colors">
+                        AD<span class="text-lilac-600">.</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-plum-600 font-medium transition-colors">Home</a>
+                    <a href="#refleksi" class="nav-link text-gray-700 hover:text-plum-600 font-medium transition-colors">Refleksi PPL</a>
+                    <a href="#filosofi" class="nav-link text-gray-700 hover:text-plum-600 font-medium transition-colors">Filosofi Mengajar</a>
+                    <a href="#produk" class="nav-link text-gray-700 hover:text-plum-600 font-medium transition-colors">Produk Pembelajaran</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-plum-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300">
+                <div class="flex flex-col space-y-2 pb-4">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-plum-600 py-2 transition-colors">Home</a>
+                    <a href="#refleksi" class="nav-link text-gray-700 hover:text-plum-600 py-2 transition-colors">Refleksi PPL</a>
+                    <a href="#filosofi" class="nav-link text-gray-700 hover:text-plum-600 py-2 transition-colors">Filosofi Mengajar</a>
+                    <a href="#produk" class="nav-link text-gray-700 hover:text-plum-600 py-2 transition-colors">Produk Pembelajaran</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Home -->
+    <section id="home" class="min-h-screen flex items-center pt-20 pb-12 px-4 md:px-8 bg-gradient-to-br from-lilac-50 via-white to-lilac-100">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="flex flex-col justify-center order-2 md:order-1 text-center md:text-left">
+                    <p class="text-lilac-600 font-medium mb-2 text-sm md:text-base tracking-wide">Program Pendidikan Profesi Guru</p>
+                    <h1 class="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-plum-700 mb-6 leading-tight">
+                        Refleksi Perjalanan Menjadi Guru Profesional
+                    </h1>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+                        Dokumentasi pembelajaran dan refleksi akhir dari pengalaman Praktik Pengalaman Lapangan (PPL) Terbimbing dalam program Pendidikan Profesi Guru (PPG) Calon Guru Informatika.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#refleksi" class="btn-primary">
+                            Lihat Refleksi <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#filosofi" class="btn-secondary">
+                            Filosofi Mengajar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Profile -->
+                <div class="flex justify-center items-center order-1 md:order-2">
+                    <div class="relative w-80 h-80 md:w-96 md:h-96">
+                        <!-- Decorative circles -->
+                        <div class="absolute inset-0 rounded-full border-2 border-lilac-200 opacity-50"></div>
+                        <div class="absolute inset-8 rounded-full border-2 border-lilac-300 opacity-30"></div>
+
+                        <!-- Profile Image Container -->
+                        <div class="absolute inset-12 rounded-full overflow-hidden bg-gradient-to-br from-lilac-200 to-plum-100 flex items-center justify-center shadow-lg">
+                            <div class="w-full h-full rounded-full bg-gradient-to-br from-plum-400 to-lilac-500 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-user text-8xl opacity-80"></i>
+                                    <p class="mt-4 font-medium">Ariska Dewi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Quick Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 md:mt-24">
+                <div class="card-base text-center p-6 md:p-8">
+                    <div class="text-plum-600 text-4xl mb-3">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">PPG Informatika</h3>
+                    <p class="text-gray-600 text-sm">Calon Guru Pendidikan Profesi Guru</p>
+                </div>
+                <div class="card-base text-center p-6 md:p-8">
+                    <div class="text-plum-600 text-4xl mb-3">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">PPL Terbimbing</h3>
+                    <p class="text-gray-600 text-sm">Praktik Pengalaman Lapangan Terbimbing</p>
+                </div>
+                <div class="card-base text-center p-6 md:p-8">
+                    <div class="text-plum-600 text-4xl mb-3">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Refleksi Mendalam</h3>
+                    <p class="text-gray-600 text-sm">Pembelajaran & Pengembangan Pedagogi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refleksi Section -->
+    <section id="refleksi" class="py-20 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <p class="text-lilac-600 font-medium mb-2 text-sm md:text-base tracking-wide">KEDALAMAN ANALISIS</p>
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-plum-700 mb-4">
+                    Refleksi Akhir PPL Terbimbing
+                </h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-lilac-400 to-plum-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Tiga poin refleksi utama yang merangkum pembelajaran, tantangan, dan rencana pengembangan profesional sebagai calon guru.
+                </p>
+            </div>
+
+            <!-- Reflection Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Pembelajaran Utama -->
+                <div class="reflection-card group">
+                    <div class="reflection-card-header">
+                        <div class="reflection-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="font-playfair font-bold text-xl text-plum-700 mt-4">Pembelajaran Utama</h3>
+                    </div>
+                    <div class="reflection-card-content">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Selama PPL Terbimbing, saya telah mengalami perkembangan signifikan dalam pemahaman pedagogi dan adaptasi dalam lingkungan sekolah. Pembelajaran kunci meliputi:
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Penerapan strategi pembelajaran yang student-centric dan interaktif</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Manajemen kelas yang efektif dengan pendekatan yang empati</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Integrasi teknologi dalam proses pembelajaran modern</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tantangan & Solusi -->
+                <div class="reflection-card group">
+                    <div class="reflection-card-header">
+                        <div class="reflection-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="font-playfair font-bold text-xl text-plum-700 mt-4">Tantangan & Solusi</h3>
+                    </div>
+                    <div class="reflection-card-content">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Tantangan terbesar yang dihadapi adalah bagaimana menjaga engagement siswa dengan beragam gaya belajar dan kemampuan akademis yang berbeda-beda.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span><strong>Tantangan:</strong> Heterogenitas kemampuan siswa</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span><strong>Solusi:</strong> Diferensiasi pembelajaran dan peer tutoring</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span><strong>Hasil:</strong> Peningkatan partisipasi aktif siswa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: Umpan Balik & Rencana -->
+                <div class="reflection-card group">
+                    <div class="reflection-card-header">
+                        <div class="reflection-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h3 class="font-playfair font-bold text-xl text-plum-700 mt-4">Umpan Balik & Rencana PPL Mandiri</h3>
+                    </div>
+                    <div class="reflection-card-content">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Umpan balik konstruktif dari Guru Pamong dan DPL menjadi bekal berharga untuk perbaikan berkelanjutan menuju PPL Mandiri.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Meningkatkan rancangan Rencana Pelaksanaan Pembelajaran (RPP)</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Mengembangkan media pembelajaran berbasis teknologi</span>
+                            </li>
+                            <li class="flex gap-3 text-gray-700">
+                                <span class="text-plum-600 font-bold flex-shrink-0">•</span>
+                                <span>Memperdalam refleksi praktik mengajar secara berkelanjutan</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofi Mengajar Section -->
+    <section id="filosofi" class="py-20 px-4 md:px-8 bg-gradient-to-b from-lilac-50 to-white">
+        <div class="max-w-4xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <p class="text-lilac-600 font-medium mb-2 text-sm md:text-base tracking-wide">IDEOLOGI GURU PROFESIONAL</p>
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-plum-700 mb-4">
+                    Filosofi Mengajar
+                </h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-lilac-400 to-plum-600 mx-auto"></div>
+            </div>
+
+            <!-- Philosophy Content -->
+            <div class="bg-white border-l-4 border-plum-600 p-8 md:p-12 rounded-r-lg shadow-subtle">
+                <article class="prose-custom">
+                    <p class="text-plum-700 text-lg leading-relaxed mb-6 first-letter:text-4xl first-letter:font-bold first-letter:mr-2">
+                        Filosofi mengajar saya didasarkan pada prinsip <strong>Konstruktivisme Sosial</strong>, di mana setiap peserta didik adalah individu yang aktif dalam membangun pengetahuan mereka sendiri melalui interaksi sosial, pengalaman langsung, dan refleksi mendalam. Saya percaya bahwa pendidikan bukan hanya tentang transfer pengetahuan dari guru kepada siswa, tetapi merupakan proses kolaboratif dalam menciptakan makna bersama yang relevan dengan kehidupan nyata mereka.
+                    </p>
+
+                    <p class="text-plum-700 text-lg leading-relaxed mb-6">
+                        Sebagai guru, komitmen saya adalah menciptakan lingkungan belajar yang aman, inklusif, dan mendukung di mana setiap siswa merasa dihargai dan termotivasi untuk belajar. Saya menerapkan konsep <strong>Zone of Proximal Development (ZPD)</strong> melalui pemberian scaffolding yang tepat dan dukungan yang responsif terhadap kebutuhan individual siswa. Dengan pemahaman bahwa setiap siswa memiliki gaya belajar, kecepatan, dan kemampuan yang unik, saya berkomitmen untuk melakukan diferensiasi pembelajaran dan memberikan feedback yang konstruktif untuk mendorong pertumbuhan akademik dan personal mereka.
+                    </p>
+
+                    <p class="text-plum-700 text-lg leading-relaxed mb-6">
+                        Implementasi <strong>Growth Mindset</strong> menjadi fondasi dalam setiap interaksi pembelajaran saya. Saya mengajarkan siswa bahwa kesalahan dan tantangan adalah peluang untuk belajar dan berkembang, bukan sesuatu yang harus ditakuti. Dengan mengintegrasikan teknologi secara bijaksana dan menciptakan peluang pembelajaran yang otentik, saya berusaha menginspirasi generasi muda untuk menjadi pemikir kritis, kolaboratif, dan inovatif yang siap menghadapi tantangan masa depan. Pendidikan adalah investasi untuk masa depan yang lebih baik, dan setiap momen pengajaran adalah kesempatan untuk membuat perbedaan positif dalam kehidupan siswa.
+                    </p>
+                </article>
+
+                <!-- Philosophical Concepts Highlights -->
+                <div class="mt-12 pt-8 border-t border-lilac-200">
+                    <h3 class="font-playfair font-bold text-2xl text-plum-700 mb-6">Konsep Teoritis Utama</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="concept-box">
+                            <div class="concept-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h4 class="font-semibold text-plum-700 mt-3 mb-2">Konstruktivisme Sosial</h4>
+                            <p class="text-gray-600 text-sm">Pembelajaran melalui interaksi sosial dan pengalaman langsung untuk membangun pengetahuan bermakna.</p>
+                        </div>
+                        <div class="concept-box">
+                            <div class="concept-icon">
+                                <i class="fas fa-arrows-up-down"></i>
+                            </div>
+                            <h4 class="font-semibold text-plum-700 mt-3 mb-2">ZPD (Zone of Proximal Development)</h4>
+                            <p class="text-gray-600 text-sm">Pemberian dukungan bertingkat untuk membawa siswa dari level saat ini ke level potensial mereka.</p>
+                        </div>
+                        <div class="concept-box">
+                            <div class="concept-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4 class="font-semibold text-plum-700 mt-3 mb-2">Growth Mindset</h4>
+                            <p class="text-gray-600 text-sm">Kepercayaan bahwa kemampuan dapat dikembangkan melalui kerja keras, dedikasi, dan pembelajaran berkelanjutan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Pembelajaran Section -->
+    <section id="produk" class="py-20 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <p class="text-lilac-600 font-medium mb-2 text-sm md:text-base tracking-wide">KARYA NYATA</p>
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-plum-700 mb-4">
+                    Produk Pembelajaran
+                </h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-lilac-400 to-plum-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Koleksi produk pembelajaran yang dirancang dan dikembangkan selama PPL Terbimbing.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-plum-300 to-lilac-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-presentation text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Rencana Pelaksanaan Pembelajaran (RPP)</h3>
+                        <p class="text-gray-600 text-sm mb-4">RPP terstruktur dengan integrasi model pembelajaran kooperatif dan diferensiasi untuk heterogenitas kelas.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Pedagogi</span>
+                            <span class="tag">Perencanaan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-lilac-300 to-plum-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-video text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Media Pembelajaran Interaktif</h3>
+                        <p class="text-gray-600 text-sm mb-4">Video pembelajaran dan interactive slideshow yang dirancang untuk meningkatkan engagement dan visualisasi konsep.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Multimedia</span>
+                            <span class="tag">Teknologi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-plum-300 to-lilac-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-chart-bar text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Instrumen Evaluasi & Penilaian</h3>
+                        <p class="text-gray-600 text-sm mb-4">Rubrik penilaian holistik, kuis formatiif, dan instrumen asesmen autentik untuk berbagai ranah kompetensi.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Asesmen</span>
+                            <span class="tag">Evaluasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-lilac-300 to-plum-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-book text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Modul Pembelajaran Tematik</h3>
+                        <p class="text-gray-600 text-sm mb-4">Modul pembelajaran lengkap dengan aktivitas hands-on, diskusi berkelanjutan, dan refleksi mendalam untuk siswa.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Konten</span>
+                            <span class="tag">Tematik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-plum-300 to-lilac-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Aplikasi Pembelajaran Berbasis Web</h3>
+                        <p class="text-gray-600 text-sm mb-4">Platform pembelajaran interaktif dengan fitur gamification, tracking progres, dan feedback real-time untuk siswa.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Teknologi</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="w-full h-48 bg-gradient-to-br from-lilac-300 to-plum-300 rounded-t-lg flex items-center justify-center">
+                            <i class="fas fa-comments text-white text-5xl opacity-70"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg text-plum-700 mb-2">Panduan Diskusi & Brainstorming</h3>
+                        <p class="text-gray-600 text-sm mb-4">Panduan praktis untuk memfasilitasi diskusi kelompok, critical thinking, dan kolaborasi dalam pembelajaran kooperatif.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="tag">Kolaborasi</span>
+                            <span class="tag">Pedagogis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-plum-900 text-white py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-playfair font-bold text-xl mb-4">E-Portfolio</h3>
+                    <p class="text-lilac-200 text-sm">Refleksi akhir PPL Terbimbing dalam program Pendidikan Profesi Guru.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Navigasi</h4>
+                    <ul class="space-y-2 text-sm text-lilac-200">
+                        <li><a href="#home" class="hover:text-lilac-100 transition-colors">Home</a></li>
+                        <li><a href="#refleksi" class="hover:text-lilac-100 transition-colors">Refleksi PPL</a></li>
+                        <li><a href="#filosofi" class="hover:text-lilac-100 transition-colors">Filosofi Mengajar</a></li>
+                        <li><a href="#produk" class="hover:text-lilac-100 transition-colors">Produk Pembelajaran</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Kontak</h4>
+                    <ul class="space-y-2 text-sm text-lilac-200">
+                        <li><a href="mailto:ariska@example.com" class="hover:text-lilac-100 transition-colors">Email</a></li>
+                        <li><a href="#" class="hover:text-lilac-100 transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-lilac-100 transition-colors">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Tentang</h4>
+                    <p class="text-lilac-200 text-sm">Calon Guru Informatika, Program PPG, Tahun 2025-2026.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-plum-700 pt-8 text-center text-lilac-300 text-sm">
+                <p>&copy; 2025 Ariska Dewi. Semua hak dilindungi. Dibuat dengan <i class="fas fa-heart text-red-400"></i> untuk pendidikan yang lebih baik.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-plum-600 hover:bg-plum-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
