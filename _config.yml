@@ -1,0 +1,37 @@
+# GitHub Pages Configuration
+theme: null
+remote_theme: null
+
+# Site Settings
+title: E-Portfolio | Ariska Dewi
+description: Refleksi Akhir PPL Terbimbing - Program Pendidikan Profesi Guru
+url: https://ariskadewi.github.io/e_portofolio2_ariska
+repository: ariskadewi/e_portofolio2_ariska
+
+# Build settings
+markdown: kramdown
+theme: minimal
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git
+  - .gitignore
+  - assets/private/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO
+google_site_verification: 
+social:
+  name: Ariska Dewi
+  links:
+    - https://github.com/ariskadewi
